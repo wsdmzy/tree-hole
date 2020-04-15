@@ -9,9 +9,8 @@ const userSchema = new mongoose.Schema({
   },
   telephone: {
     type: Number,
+    unique: true,
     required: true,
-    minlength: 11,
-    maxlength: 11
   },
   password: {
     type: String,
